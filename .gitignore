@@ -1,0 +1,9 @@
+### Sass ###
+.sass-cache
+.sass-cache/*
+*.css.map
+config.rb
+
+### Notes ###
+*.txt
+
