@@ -40,7 +40,7 @@
 		dots = dots.join('');
 		dotWrapper.append(dots);
 		
-
+		//Dots must be set up first
 		this.dots = this.context.find('.dot');
 	}
 	window.Slider = Slider;
