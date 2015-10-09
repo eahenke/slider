@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 8, ../sass/_mixins.scss */
-.slider-wrapper, .arrow {
+.arrow, .slider-wrapper {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -68,6 +68,69 @@
 }
 
 /* 'εáà' */
+<<<<<<< HEAD
+=======
+/*Slider Controls */
+/*Arrows */
+/* line 9, ../sass/_controls.scss */
+.arrow {
+  cursor: pointer;
+}
+
+/* line 14, ../sass/_controls.scss */
+.arrow.arrow-left {
+  left: 0;
+  color: white;
+  text-align: left;
+  font-size: 30pt;
+}
+
+/* line 18, ../sass/_controls.scss */
+.arrow.arrow-right {
+  right: 0;
+  color: white;
+  text-align: right;
+  font-size: 30pt;
+}
+
+/* Icons */
+/* line 23, ../sass/_controls.scss */
+.arrow span {
+  opacity: 0.7;
+}
+
+/* line 27, ../sass/_controls.scss */
+.arrow .clicked {
+  opacity: 1;
+}
+
+/* Dots */
+/* line 33, ../sass/_controls.scss */
+.dot-wrapper {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 41, ../sass/_controls.scss */
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 51, ../sass/_controls.scss */
+.dot.active {
+  background-color: white;
+}
+
+>>>>>>> develop
 /* line 6, ../sass/slider.scss */
 body, html {
   background-color: #eee;
