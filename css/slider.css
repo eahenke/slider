@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 8, ../sass/_mixins.scss */
-.slider-wrapper, .arrow {
+.arrow, .slider-wrapper {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -68,7 +68,67 @@
 }
 
 /* 'εáà' */
-/* line 5, ../sass/slider.scss */
+/*Slider Controls */
+/*Arrows */
+/* line 9, ../sass/_controls.scss */
+.arrow {
+  cursor: pointer;
+}
+
+/* line 14, ../sass/_controls.scss */
+.arrow.arrow-left {
+  left: 0;
+  color: white;
+  text-align: left;
+  font-size: 30pt;
+}
+
+/* line 18, ../sass/_controls.scss */
+.arrow.arrow-right {
+  right: 0;
+  color: white;
+  text-align: right;
+  font-size: 30pt;
+}
+
+/* Icons */
+/* line 23, ../sass/_controls.scss */
+.arrow span {
+  opacity: 0.7;
+}
+
+/* line 27, ../sass/_controls.scss */
+.arrow .clicked {
+  opacity: 1;
+}
+
+/* Dots */
+/* line 33, ../sass/_controls.scss */
+.dot-wrapper {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 41, ../sass/_controls.scss */
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 51, ../sass/_controls.scss */
+.dot.active {
+  background-color: white;
+}
+
+/* line 6, ../sass/slider.scss */
 body, html {
   background-color: #eee;
   width: 100%;
@@ -76,7 +136,7 @@ body, html {
   margin: 0;
 }
 
-/* line 12, ../sass/slider.scss */
+/* line 13, ../sass/slider.scss */
 .slider-wrapper {
   position: relative;
   overflow: hidden;
@@ -89,7 +149,7 @@ body, html {
   height: 600px;
 }
 
-/* line 27, ../sass/slider.scss */
+/* line 28, ../sass/slider.scss */
 .slider {
   position: relative;
   list-style: none;
@@ -99,7 +159,7 @@ body, html {
   padding: 0;
 }
 
-/* line 36, ../sass/slider.scss */
+/* line 37, ../sass/slider.scss */
 .slide {
   height: 100%;
   width: 100%;
@@ -110,30 +170,35 @@ body, html {
   z-index: 1;
 }
 
-/* line 46, ../sass/slider.scss */
+/* line 47, ../sass/slider.scss */
 .slide img {
   width: 100%;
   height: auto;
 }
 
-/* line 52, ../sass/slider.scss */
+/* line 53, ../sass/slider.scss */
 .slide.active, .slide.right, .slide.left {
   z-index: 2;
 }
 
-/* line 56, ../sass/slider.scss */
+/* line 57, ../sass/slider.scss */
 .slide.right {
   left: 100%;
 }
 
-/* line 60, ../sass/slider.scss */
+/* line 61, ../sass/slider.scss */
 .slide.left {
   left: -100%;
 }
 
 /*Slider Controls */
 /*Arrows */
-/* line 76, ../sass/slider.scss */
+/* line 73, ../sass/slider.scss */
+.arrow {
+  cursor: pointer;
+}
+
+/* line 78, ../sass/slider.scss */
 .arrow.arrow-left {
   left: 0;
   color: white;
@@ -141,7 +206,7 @@ body, html {
   font-size: 30pt;
 }
 
-/* line 80, ../sass/slider.scss */
+/* line 82, ../sass/slider.scss */
 .arrow.arrow-right {
   right: 0;
   color: white;
@@ -150,18 +215,18 @@ body, html {
 }
 
 /* Icons */
-/* line 85, ../sass/slider.scss */
+/* line 87, ../sass/slider.scss */
 .arrow span {
   opacity: 0.7;
 }
 
-/* line 89, ../sass/slider.scss */
+/* line 91, ../sass/slider.scss */
 .arrow .clicked {
   opacity: 1;
 }
 
 /* Dots */
-/* line 95, ../sass/slider.scss */
+/* line 97, ../sass/slider.scss */
 .dot-wrapper {
   text-align: center;
   position: absolute;
@@ -170,17 +235,18 @@ body, html {
   bottom: 0;
 }
 
-/* line 103, ../sass/slider.scss */
+/* line 105, ../sass/slider.scss */
 .dot {
   display: inline-block;
   width: 15px;
   height: 15px;
-  border-radius: 100%;
-  border: 2px solid white;
   margin: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
-/* line 112, ../sass/slider.scss */
+/* line 115, ../sass/slider.scss */
 .dot.active {
   background-color: white;
 }

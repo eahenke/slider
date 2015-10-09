@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "icons/slidericons";
+@import "controls";
 
 body, html {
   background-color: #eee;
@@ -71,6 +72,7 @@ body, html {
 
 .arrow {
   @extend %vertical-center;
+  cursor: pointer;
 }
 
 .arrow.arrow-left {
@@ -104,9 +106,10 @@ body, html {
   display: inline-block;
   width: 15px;
   height: 15px;
-  border-radius: 100%;
-  border: 2px solid white;
   margin: 10px;
+  border: 2px solid white;
+  border-radius: 100%;
+  cursor: pointer;
 }
 
 .dot.active {
